@@ -58,7 +58,6 @@ class Board
     @C2 = BoardCase.new('C2')
     @C3 = BoardCase.new('C3')
     @case_array = [@A1, @A2, @A3, @B1, @B2, @B3, @C1, @C2, @C3]
-    puts @A1
   end
 
   def printer
@@ -128,8 +127,8 @@ end
 class Game
   attr_accessor :turn_counter, :board, :player1, :player2
   def initialize
+    c = 1
     loop do
-      c = 1
       @@win = 'draw'
       @@turn_counter = 0
       puts "What's the first player's name ?"
